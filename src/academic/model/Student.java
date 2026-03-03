@@ -7,38 +7,18 @@ package academic.model;
 public class Student {
  private String nim;
     private String name;
-    private int year; // Angkatan
-    private String studyProgram; // Program Studi
+    private int year;
+    private String program;
 
-    public Student(String nim, String name, int year, String studyProgram) {
+    public Student(String nim, String name, int year, String program) {
         this.nim = nim;
         this.name = name;
         this.year = year;
-        this.studyProgram = studyProgram;
-    }
-
-    // Getter methods (opsional, namun baik untuk praktik OOP)
-    public String getNim() {
-        return nim;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getYear() {
-        return year;
-    }
-
-    public String getStudyProgram() {
-        return studyProgram;
+        this.program = program;
     }
 
     @Override
     public String toString() {
-        // Format output: nim|nama|angkatan|program_studi
-        return nim + "|" + name + "|" + year + "|" + studyProgram;
+        return nim + "|" + name + "|" + year + "|" + program;
     }
 }
-
-    
